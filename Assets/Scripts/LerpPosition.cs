@@ -7,14 +7,14 @@ public class LerpPosition : MonoBehaviour
 
     [SerializeField] private float smoothing = 0.1f;
 
-    Vector2 startingPos;
+    Vector3 startingPos;
 
     void Start() {
         startingPos = transform.position;
     }
 
     void Update() {
-        transform.position = Vector2.Lerp(transform.position, startingPos, smoothing);
+        transform.position = Vector3.Lerp(transform.position, startingPos, smoothing);
     }
 
 }
