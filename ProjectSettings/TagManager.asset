@@ -15,8 +15,8 @@ TagManager:
   - Walls
   - Bullets
   - EnemyBullets
-  - 
-  - 
+  - Enemies
+  - PlayerWallCollider
   - 
   - 
   - 
