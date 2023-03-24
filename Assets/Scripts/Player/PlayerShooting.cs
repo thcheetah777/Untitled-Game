@@ -19,6 +19,17 @@ public class PlayerShooting : MonoBehaviour
     public float bulletSpeed;
     public float fireRate;
     public float randomness = 5;
+    public float damage = 10;
+
+    #region Singleton
+    
+    static public PlayerShooting Instance = null;
+    void Awake() {
+        if (Instance == null) Instance = this;
+        else if (Instance != this) Destroy(gameObject);
+    }
+    
+    #endregion
 
     Camera cam;
 
